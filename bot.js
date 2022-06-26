@@ -45,16 +45,8 @@ listener.on('message', msg => {
 
 
 function consigna(stat, acct, name, replyToId) {
-  const params = {
-    id: replyToId,
-  }
-
-  M.get('statuses', params, (error, data, response) => {
-    if (error) {
-      console.error(error);
-    } else {
-      console.log(data);
-    } 
+  M.get(`statuses/:${replyToId}`, {}).then(resp => {
+    console.log(resp.data)
   })
 }
 
