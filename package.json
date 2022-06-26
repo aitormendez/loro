@@ -1,0 +1,25 @@
+{
+  "name": "consigna",
+  "version": "1.0.0",
+  "description": "bot de mastodon para repetir consignas",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "bot",
+    "mastodon",
+    "loro",
+    "consignas"
+  ],
+  "author": "Aitor Méndez",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "mastodon-api": "^1.3.0"
+  }
+}
